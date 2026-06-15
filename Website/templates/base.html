@@ -29,29 +29,99 @@
 
         <div class="logo-container">
 
-            <img src="{{ url_for('static',
-                                  filename='images/monogram.png') }}"
-                 class="monogram">
+            <a href="/">
 
-            <img src="{{ url_for('static',
-                                  filename='images/logo.png') }}"
-                 class="logo">
+                <img src="{{ url_for('static',
+                                      filename='images/monogram.png') }}"
+                     class="monogram"
+                     alt="VASYNTIQ Monogram">
+
+            </a>
+
+            <a href="/">
+
+                <img src="{{ url_for('static',
+                                      filename='images/logo.png') }}"
+                     class="logo"
+                     alt="VASYNTIQ Logo">
+
+            </a>
 
         </div>
 
-        <ul>
+        <div class="menu-toggle">
 
-            <li><a href="/">Home</a></li>
+            ☰
 
-            <li><a href="/about">About</a></li>
+        </div>
 
-            <li><a href="/services">Services</a></li>
+        <ul class="nav-links">
 
-            <li><a href="/portfolio">Portfolio</a></li>
+            <li>
 
-            <li><a href="/careers">Careers</a></li>
+                <a href="/home"
+                   class="{% if request.path == '/home' %}active{% endif %}">
 
-            <li><a href="/contact">Contact</a></li>
+                    Home
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="/about"
+                   class="{% if request.path == '/about' %}active{% endif %}">
+
+                    About
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="/services"
+                   class="{% if request.path == '/services' %}active{% endif %}">
+
+                    Services
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="/portfolio"
+                   class="{% if request.path == '/portfolio' %}active{% endif %}">
+
+                    Portfolio
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="/careers"
+                   class="{% if request.path == '/careers' %}active{% endif %}">
+
+                    Careers
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="/contact"
+                   class="{% if request.path == '/contact' %}active{% endif %}">
+
+                    Contact
+
+                </a>
+
+            </li>
 
         </ul>
 
@@ -210,6 +280,10 @@
 
 <script src="{{ url_for('static',
                         filename='js/story-bubbles.js') }}">
+</script>
+
+<script src="{{ url_for('static',
+                        filename='js/navbar.js') }}">
 </script>
 
 </body>

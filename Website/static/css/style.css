@@ -32,7 +32,7 @@ nav {
 
     align-items: center;
 
-    padding: 20px 50px;
+    padding: 18px 8%;
 
     background: rgba(10,15,20,0.8);
 
@@ -44,7 +44,7 @@ nav {
 
     display: flex;
 
-    gap: 15px;
+    gap: 12px;
 
     align-items: center;
 
@@ -52,17 +52,17 @@ nav {
 
 .monogram {
 
-    height: 1px;
+    height: auto;
 
-    width: auto;
+    width: 1px;
 
 }
 
 .logo {
 
-    height: 100px;
+    height: auto;
 
-    width: auto;
+    width: 200px;
 
 }
 
@@ -72,7 +72,7 @@ nav ul {
 
     list-style: none;
 
-    gap: 30px;
+    gap: 35px;
 
 }
 
@@ -82,6 +82,82 @@ nav a {
 
     text-decoration: none;
 
+    font-size: 1rem;
+
+    font-weight: 500;
+
+    transition: 0.3s ease;
+
+}
+
+@media (max-width: 992px) {
+
+    nav {
+
+        padding: 15px 6%;
+
+    }
+
+    .monogram {
+
+        width: 35px;
+    }
+
+    .logo {
+
+        width: 100px;
+    }
+
+    .menu-toggle {
+
+        display: block;
+    }
+
+    .nav-links {
+
+        position: absolute;
+
+        top: 100%;
+
+        left: 0;
+
+        width: 100%;
+
+        background: #0A0F14;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 25px;
+
+        padding: 25px 0;
+
+        display: none;
+    }
+
+    .nav-links.active {
+
+        display: flex;
+
+        color: #32D6C8;
+    }
+}
+
+.menu-toggle {
+
+    display: none;
+
+    color: white;
+
+    font-size: 2rem;
+
+    cursor: pointer;
+}
+
+.nav-links li a:hover {
+
+    color: #32D6C8;
 }
 
 .hero {
@@ -460,13 +536,17 @@ footer {
 
 header {
 
-    position: fixed;
+    position: sticky;
 
     top: 0;
 
     width: 100%;
 
-    background: transparent;
+    background: rgba(10, 15, 20, 0.95);
+
+    backdrop-filter: blur(15px);
+
+    border-bottom: 1px solid rgba(255,255,255,0.08);
 
     transition: 0.3s;
 
