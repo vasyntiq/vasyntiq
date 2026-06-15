@@ -4,7 +4,7 @@ document.addEventListener(
 
     () => {
 
-        const toggle =
+        const menuToggle =
 
             document.querySelector(
 
@@ -18,7 +18,7 @@ document.addEventListener(
                 ".nav-links"
             );
 
-        toggle.addEventListener(
+        menuToggle.addEventListener(
 
             "click",
 
@@ -28,7 +28,11 @@ document.addEventListener(
 
                     "active"
                 );
+
             }
+
         );
+
     }
+
 );
