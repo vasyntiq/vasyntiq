@@ -298,7 +298,7 @@ footer {
 
 .footer-logo {
 
-    width: 300px;
+    width: 250px;
 
     max-width: 100%;
 }
@@ -306,11 +306,9 @@ footer {
 .footer-copyright {
 
     color: white;
-
+    line-height: 1.8;
     margin-top: 30px;
-
     letter-spacing: 3px;
-
     font-size: 1rem;
 }
 
@@ -649,6 +647,24 @@ header.scrolled {
 #typewriter {
 
     color: #32D6C8;
+}
+
+.typewriter {
+
+    display: inline-block;
+
+    white-space: normal;
+
+    word-break: break-word;
+
+}
+
+@media screen and (max-width:768px){
+
+    .typewriter {
+        display: block;
+    }
+
 }
 
 .cursor {
@@ -1483,9 +1499,9 @@ header.scrolled {
 
     color: #32D6C8;
 
-    font-size: 0.95rem;
+    font-size: 1rem;
 
-    letter-spacing: 2px;
+    letter-spacing: 4px;
 
     text-transform: uppercase;
 
@@ -1495,7 +1511,7 @@ header.scrolled {
 
 .section-header h2 {
 
-    font-size: 3rem;
+    font-size: 2.8rem;
 
     margin-top: 15px;
 
@@ -1630,6 +1646,34 @@ header.scrolled {
     opacity: 1;
 
     transform: translateY(0);
+
+}
+
+@media screen and (max-width:768px){
+
+    .timeline-content {
+
+        padding: 30px 25px;
+
+        border-radius: 25px;
+    }
+
+    .timeline-date {
+
+        font-size: 1rem;
+    }
+
+    .timeline-content h3 {
+
+        font-size: 2rem;
+    }
+
+    .timeline-content p {
+
+        font-size: 1rem;
+
+        line-height: 1.8;
+    }
 
 }
 
@@ -2138,25 +2182,31 @@ header.scrolled {
 
     nav {
 
-        padding: 15px 5%;
-
+        padding: 12px 20px;
         position: relative;
+    }
+
+    .logo-container {
+        gap: 10px;
     }
 
     .monogram {
 
-        width: 35px;
+        width: 50px;
+        height: auto;
     }
 
     .logo {
 
-        width: 100px;
+        width: 140px;        
+        height: auto;
     }
 
     .menu-toggle {
 
         display: block;
-
+        font-size: 2rem;
+        color: white;
         z-index: 1001;
     }
 
@@ -2164,7 +2214,7 @@ header.scrolled {
 
         position: absolute;
 
-        top: 100%;
+        top: 80px;
 
         left: 0;
 
@@ -2178,9 +2228,9 @@ header.scrolled {
 
         text-align: center;
 
-        padding: 25px 0;
+        padding: 30px 0;
 
-        gap: 25px;
+        gap: 20px;
 
         display: none;
     }
@@ -2190,27 +2240,32 @@ header.scrolled {
         display: flex;
     }
 
+     .nav-links li a {
+        font-size: 1rem;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
 
     .hero {
-
-        padding: 140px 20px 80px;
+        
+        min-height: 85vh;
+        padding: 130px 25px 60px;
     }
 
     .hero h1 {
 
-        font-size: 2rem;
+        font-size: 2.6rem;
 
-        line-height: 1.3;
+        line-height: 1.2;
     }
 
     .hero p {
 
-        font-size: 1rem;
-
-        margin-top: 15px;
+        font-size: 1.1rem;
+        line-height: 1.8;
+        margin-top: 25px;
     }
 
 }
@@ -2220,16 +2275,17 @@ header.scrolled {
     .hero-buttons {
 
         flex-direction: column;
-
+        display: flex;
         align-items: center;
-
-        gap: 15px;
+        margin-top: 40px;
+        gap: 20px;
     }
 
     .hero-buttons a {
 
-        width: 90%;
-
+        width: 100%;
+        padding: 18px;
+        font-size: 1rem;
         text-align: center;
     }
 
@@ -2271,21 +2327,30 @@ header.scrolled {
 
 @media screen and (max-width: 768px) {
 
+    .timeline {
+
+        margin-top: 60px;
+        padding-left: 20px;
+    }
+
+
     .timeline::before {
 
-        left: 15px;
+        left: 20px;
     }
 
     .timeline-item {
 
         width: 100%;
-
-        padding-left: 50px;
+        margin-bottom: 50px;
+        padding-left: 60px;
     }
 
     .timeline-dot {
 
-        left: 7px;
+        left: 9px;
+        width: 22px;
+        height: 22px;
     }
 
 }
@@ -2311,28 +2376,54 @@ header.scrolled {
     .footer-wrapper {
 
         flex-direction: column;
-
+        align-items: center;
         gap: 30px;
-
+        padding: 50px 25px;
         text-align: center;
     }
 
     .footer-contact-section {
 
         align-items: center;
+        width: 100%;
     }
 
     .contact-row {
 
         justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 35px;
+    }
+
+    .footer-icon {
+
+        width: 40px;
+        height: 40px;
+    }
+
+    .contact-row a {
+
+        font-size: 1.15rem;
+        line-height: 1.7;
+        word-break: break-word;
     }
 
     .social-icons {
 
         justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+        .social-icon {
+
+        width: 50px;
+        height: 50px;
     }
 
 }
+
 
 @media screen and (max-width: 768px) {
 
@@ -2363,4 +2454,12 @@ header.scrolled {
         padding: 70px 20px;
     }
 
+}
+
+html,
+body {
+
+    overflow-x: hidden;
+
+    width: 100%;
 }
