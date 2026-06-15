@@ -1,0 +1,552 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<canvas id="network"></canvas>
+
+<section class="hero">
+
+    <canvas id="network"></canvas>
+
+    <div class="hero-content">
+
+        <h1 class="hero-title">
+
+            We Build
+
+            <span id="typewriter"></span>
+
+        </h1>
+
+        <p>
+            VASYNTIQ helps startups, enterprises, and institutions build scalable software, intelligent automation, and impactful digital experiences.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="{{ url_for('contact') }}"
+               class="cta-button primary-btn">
+
+                Start Your Project →
+
+            </a>
+
+            <a href="{{ url_for('portfolio') }}"
+               class="cta-button secondary-btn">
+
+                Explore Our Portfolio →
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="trust-section">
+
+    <div class="trust-container">
+
+        <div class="trust-header animate-element">
+
+            <h2 class="trust-title">
+
+                Delivering Innovation with Purpose
+
+            </h2>
+
+            <p class="trust-description">
+
+                At VASYNTIQ, we combine creativity,
+                technology, and strategic thinking
+                to build intelligent digital solutions
+                that create lasting impact.
+
+            </p>
+
+        </div>
+
+        <div class="metrics-grid">
+
+            <a href="{{ url_for('portfolio') }}"
+               class="metric-card metric-link animate-element">
+
+                <h3 class="counter"
+                    data-target="5">
+
+                0
+
+                </h3>
+
+                <span>+</span>
+
+                <p>
+
+                    Projects Delivered
+                    <br>
+                    <small>View Portfolio →</small>
+
+
+                </p>
+
+            </a>
+
+            <a href="{{ url_for('services') }}"
+               class="metric-card metric-link animate-element">
+
+                <h3>
+
+                    AI + Web
+
+                </h3>
+
+                <p>
+
+                    Specialization
+                    <br>
+                    <small>Explore Services →</small>
+
+                </p>
+
+            </a>
+
+            <a href="{{ url_for('services') }}"
+               class="metric-card metric-link animate-element">
+
+                <h3>
+
+                    100%
+
+                </h3>
+
+                <p>
+
+                    Dedication
+                    <br>
+                    <small>Explore Services →</small>
+
+                </p>
+
+            </a>
+
+            <a href="{{ url_for('contact') }}"
+               class="metric-card metric-link animate-element">
+
+                <h3>
+
+                    24/7
+
+                </h3>
+
+                <p>
+
+                    Support
+                    <br>
+                    <small>Contact Us →</small>
+
+                </p>
+
+            </a>
+
+        </div>
+
+        <section class="featured-projects">
+
+            <div class="projects-header">
+
+                <h2>
+
+                    Featured Projects
+
+                </h2>
+
+                <p>
+
+                    Explore some of the innovative solutions
+                    developed by VASYNTIQ to solve real-world
+                    challenges through technology.
+
+                </p>
+
+            </div>
+
+            <div class="projects-grid">
+
+                <a href="{{ url_for('portfolio') }}"
+                   class="project-card project-link">
+
+                    <div class="project-image">
+
+                        <img src="{{ url_for('static',
+                                             filename='images/parking-prediction.jpg') }}"
+                             alt="AI Parking Prediction System">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>
+
+                            AI Parking Prediction System
+
+                        </h3>
+
+                        <p>
+
+                            Intelligent parking availability prediction
+                            using machine learning to improve urban mobility.
+
+                        </p>
+
+                    </div>
+
+                </a>
+
+                <a href="{{ url_for('portfolio') }}"
+                   class="project-card project-link">
+
+                    <div class="project-image">
+
+                        <img src="{{ url_for('static',
+                                             filename='images/stock-analyzer.jpg') }}"
+                             alt="Stock Market Analyzer">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>
+
+                            Stock Market Analysis using AI
+
+                        </h3>
+
+                        <p>
+
+                            AI-powered analytics platform for identifying
+                            market trends and supporting investment decisions.
+
+                        </p>
+
+                    </div>
+
+                </a>
+
+                <a href="{{ url_for('portfolio') }}"
+                   class="project-card project-link">
+
+                    <div class="project-image">
+
+                        <img src="{{ url_for('static',
+                                             filename='images/velammal.jpg') }}"
+                             alt="Velammal Groups Website">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>
+
+                            Veilammal Groups Website
+
+                        </h3>
+
+                        <p>
+
+                            Modern educational website designed to enhance
+                            digital presence and user engagement.
+
+                        </p>
+
+                    </div>
+
+                </a>
+
+                <a href="{{ url_for('portfolio') }}"
+                   class="project-card project-link">
+
+                    <div class="project-image">
+
+                        <img src="{{ url_for('static',
+                                             filename='images/tec.jpg') }}"
+                             alt="Thangavelu Engineering College Website">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>
+
+                            Thangavelu Engineering College Website
+                    
+                        </h3>
+
+                        <p>
+
+                            Responsive academic platform built to streamline
+                            institutional communication and accessibility.
+
+                        </p>
+
+                    </div>
+
+                </a>
+
+                <a href="{{ url_for('portfolio') }}"
+                   class="project-card project-link">
+
+                    <div class="project-image">
+
+                        <img src="{{ url_for('static',
+                                             filename='images/rebel.png') }}"
+                             alt="AI Parking Prediction System">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>
+
+                            Rebel Gym Website
+
+                        </h3>
+
+                        <p>
+
+                            A modern fitness platform designed to showcase
+                            gym services, membership plans, and elevate the
+                            digital presence of Rebel Gym.
+
+                        </p>
+
+                    </div>
+
+                </a>
+
+                <a href="{{ url_for('portfolio') }}"
+                   class="project-card project-link">
+
+                    <div class="project-image">
+
+                        <img src="{{ url_for('static',
+                                             filename='images/nrs.png') }}"
+                             alt="AI Parking Prediction System">
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>
+
+                            NRS Traders
+
+                        </h3>
+
+                        <p>
+
+                            A business website developed to strengthen the
+                            online identity of Indian Stores with an intuitive
+                            interface and seamless customer experience.
+
+                        </p>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+            <div class="portfolio-cta">
+
+                <a href="{{ url_for('portfolio') }}"
+                   class="portfolio-button">
+
+                    Explore Full Portfolio →
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</section>
+
+<section class="why-vasyntiq">
+
+    <div class="why-header">
+
+        <h2>
+
+            Why Choose VASYNTIQ?
+
+        </h2>
+
+        <p>
+
+            We don't just develop software—we create intelligent
+            digital solutions designed to solve problems,
+            accelerate growth, and deliver meaningful results.
+
+        </p>
+
+    </div>
+
+    <div class="why-grid">
+
+        <div class="why-card">
+
+            <div class="why-icon">
+
+                🚀
+
+            </div>
+
+            <h3>
+
+                Innovation-Driven Approach
+
+            </h3>
+
+            <p>
+
+                We leverage modern technologies, AI capabilities,
+                and creative thinking to build future-ready
+                solutions.
+
+            </p>
+
+        </div>
+
+        <div class="why-card">
+
+            <div class="why-icon">
+
+                ⚡
+
+            </div>
+
+            <h3>
+
+                Tailored Solutions
+
+            </h3>
+
+            <p>
+
+                Every business is unique. Our solutions are
+                designed around your goals, workflows,
+                and vision.
+
+            </p>
+
+        </div>
+
+        <div class="why-card">
+
+            <div class="why-icon">
+
+                🎯
+
+            </div>
+
+            <h3>
+
+                Quality Without Compromise
+
+            </h3>
+
+            <p>
+
+                From user experience to performance and security,
+                excellence is embedded in every stage
+                of development.
+
+            </p>
+
+        </div>
+
+        <div class="why-card">
+
+            <div class="why-icon">
+
+                🤝
+
+            </div>
+
+            <h3>
+
+                Collaborative Partnership
+
+            </h3>
+
+            <p>
+
+                We work alongside our clients, ensuring
+                transparency, communication, and shared
+                success throughout the journey.
+
+            </p>
+
+        </div>
+
+        <div class="why-card">
+
+            <div class="why-icon">
+
+                📈
+
+            </div>
+
+            <h3>
+
+                Scalable & Growth-Focused
+
+            </h3>
+
+            <p>
+
+                Whether you're a startup or an established
+                organization, we build solutions that evolve
+                with your ambitions.
+
+            </p>
+
+        </div>
+
+        <div class="why-card">
+
+            <div class="why-icon">
+
+                🛠
+
+            </div>
+
+            <h3>
+
+                End-to-End Expertise
+
+            </h3>
+
+            <p>
+
+                From ideation and design to development and
+                deployment, we manage the complete digital
+                transformation process.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="{{ url_for('static',
+                         filename='js/neural-network.js') }}">
+</script>
+
+{% endblock %}

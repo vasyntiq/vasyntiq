@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>
+        VASYNTIQ | {{ title }}
+    </title>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="AI, Software, Web & Automation Solutions">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static',
+                           filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<header>
+
+    <nav>
+
+        <div class="logo-container">
+
+            <img src="{{ url_for('static',
+                                  filename='images/monogram.png') }}"
+                 class="monogram">
+
+            <img src="{{ url_for('static',
+                                  filename='images/logo.png') }}"
+                 class="logo">
+
+        </div>
+
+        <ul>
+
+            <li><a href="/">Home</a></li>
+
+            <li><a href="/about">About</a></li>
+
+            <li><a href="/services">Services</a></li>
+
+            <li><a href="/portfolio">Portfolio</a></li>
+
+            <li><a href="/careers">Careers</a></li>
+
+            <li><a href="/contact">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+{% block content %}
+
+{% endblock %}
+
+<footer class="footer">
+
+    <div class="footer-wrapper">
+
+        <div class="footer-logo-section">
+
+            <img src="{{ url_for('static',
+                                 filename='images/foologo.png') }}"
+                 alt="VASYNTIQ Logo"
+                 class="footer-logo">
+
+            <p class="footer-copyright">
+
+                VASYNTIQ Technologies 2026.
+                All Rights Reserved
+
+            </p>
+
+        </div>
+
+        <div class="footer-contact-section">
+
+            <div class="contact-row">
+
+                <img src="{{ url_for('static',
+                             filename='images/dial.png') }}"
+                     alt="Phone"
+                     class="footer-icon">
+
+                <a href="tel:+918015724562">
+
+                    +91 80157 24562
+
+                </a>
+
+            </div>
+
+            <div class="contact-row">
+
+                <img src="{{ url_for('static',
+                             filename='images/mail.png') }}"
+                     alt="Email"
+                     class="footer-icon">
+
+                <a href="mailto:vasanthakumargroups@gmail.com">
+
+                    vasyntiq@gmail.com
+
+                </a>
+
+            </div>
+
+            <div class="contact-row">
+
+                <img src="{{ url_for('static',
+                             filename='images/location.png') }}"
+                     alt="Location"
+                     class="footer-icon">
+
+                <a href="https://maps.app.goo.gl/epfcxdnNo2X2S8fQA"
+                   target="_blank">
+
+                    First Floor,
+                    1-90A Pandisamy Street,
+                    Near Silaiman Petrol Bulk,
+                    Madurai - 630611.
+
+                </a>
+
+            </div>
+
+            <div class="social-icons">
+
+                <a href="https://wa.me/918015724562"
+                   target="_blank">
+
+                    <img src="{{ url_for('static',
+                                 filename='images/linkedin.png') }}"
+                         alt="LinkedIn"
+                         class="social-icon">
+
+                </a>
+
+                <a href="https://wa.me/918015724562"
+                   target="_blank">
+
+                    <img src="{{ url_for('static',
+                                 filename='images/instagram.png') }}"
+                         alt="Instagram"
+                         class="social-icon">
+
+                </a>
+
+                <a href="https://wa.me/918015724562"
+                   target="_blank">
+
+                    <img src="{{ url_for('static',
+                                 filename='images/facebook.png') }}"
+                         alt="Facebook"
+                         class="social-icon">
+
+                </a>
+
+                <a href="https://wa.me/918015724562"
+                   target="_blank">
+
+                    <img src="{{ url_for('static',
+                                 filename='images/whatsapp.png') }}"
+                         alt="WhatsApp"
+                         class="social-icon">
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="{{ url_for('static',
+                        filename='js/typewriter.js') }}">
+</script>
+
+<script src="{{ url_for('static',
+                        filename='js/trust-metrics.js') }}">
+</script>
+
+<script src="{{ url_for('static',
+                        filename='js/project.js') }}">
+</script>
+
+<script src="{{ url_for('static',
+                        filename='js/why-vasyntiq.js') }}">
+</script>
+
+<script src="{{ url_for('static',
+                        filename='js/about.js') }}">
+</script>
+
+<script src="{{ url_for('static',
+                        filename='js/flip-cards.js') }}">
+</script>
+
+<script src="{{ url_for('static',
+                        filename='js/story-bubbles.js') }}">
+</script>
+
+</body>
+
+</html>
