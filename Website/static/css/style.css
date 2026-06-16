@@ -2463,3 +2463,271 @@ body {
 
     width: 100%;
 }
+
+/* ==========================================
+   MOBILE RESPONSIVENESS
+   ========================================== */
+
+@media screen and (max-width: 768px) {
+
+    /* General */
+    body {
+        overflow-x: hidden;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+
+    h1 {
+        font-size: 2.5rem !important;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 2rem !important;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    /* ================= HEADER ================= */
+
+    nav {
+        padding: 15px 20px;
+    }
+
+    .logo-container {
+        gap: 10px;
+    }
+
+    .monogram {
+        height: 45px;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: #020d16;
+
+        display: none;
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 20px 0;
+
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+    }
+
+    /* ================= HERO ================= */
+
+    .hero {
+        min-height: 85vh;
+
+        padding: 120px 20px 60px;
+    }
+
+    .hero-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2.6rem !important;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+
+        margin: 20px auto;
+
+        max-width: 100%;
+    }
+
+    /* CTA Buttons */
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .hero-buttons a,
+    .hero-buttons button {
+        width: 100%;
+        padding: 16px;
+
+        font-size: 1rem;
+    }
+
+    /* ================= TRUST METRICS ================= */
+
+    .metrics-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 15px;
+    }
+
+    .metric-card {
+        padding: 20px;
+    }
+
+    .metric-number {
+        font-size: 2rem;
+    }
+
+    /* ================= PROJECTS ================= */
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card img {
+        height: auto;
+    }
+
+    /* ================= WHY CHOOSE ================= */
+
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .flip-card {
+        height: 240px;
+    }
+
+    .flip-card h3 {
+        font-size: 1.1rem;
+    }
+
+    /* ================= TIMELINE ================= */
+
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-item {
+        width: 100%;
+
+        padding-left: 50px;
+
+        margin-bottom: 40px;
+    }
+
+    .timeline-dot {
+        left: 8px;
+    }
+
+    .timeline-content {
+        width: 100%;
+
+        padding: 25px;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.8rem;
+    }
+
+    .timeline-content p {
+        font-size: 0.95rem;
+    }
+
+    /* ================= FOUNDER ================= */
+
+    .founder-wrapper {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 30px;
+    }
+
+    .founder-image img {
+        width: 250px;
+    }
+
+    /* ================= FOOTER ================= */
+
+    .footer-wrapper {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 40px;
+    }
+
+    .footer-logo {
+        max-width: 280px;
+    }
+
+    .footer-copyright {
+        font-size: 0.95rem;
+
+        line-height: 1.8;
+    }
+
+    .footer-contact-section {
+        width: 100%;
+    }
+
+    .contact-row {
+        flex-direction: column;
+
+        gap: 12px;
+
+        margin-bottom: 30px;
+    }
+
+    .footer-icon {
+        width: 40px;
+    }
+
+    .contact-row a {
+        font-size: 1.1rem;
+
+        line-height: 1.6;
+
+        word-break: break-word;
+    }
+
+    .social-icons {
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+    .social-icon {
+        width: 55px;
+    }
+
+}
