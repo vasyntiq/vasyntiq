@@ -100,12 +100,12 @@ nav a {
 
     .monogram {
 
-        width: 35px;
+        width: 0px;
     }
 
     .logo {
 
-        width: 100px;
+        width: 80px;
     }
 
     .menu-toggle {
@@ -418,47 +418,6 @@ footer {
     transform: translateY(-5px);
 
     background: #32D6C8;
-}
-
-@media (max-width: 992px) {
-
-    .footer-wrapper {
-
-        flex-direction: column;
-
-        text-align: center;
-
-        gap: 50px;
-    }
-
-    .footer-logo {
-
-        width: 280px;
-    }
-
-    .contact-row {
-
-        flex-direction: column;
-
-        align-items: center;
-    }
-
-    .contact-row a {
-
-        font-size: 1.2rem;
-    }
-
-    .contact-row i {
-
-        font-size: 2rem;
-    }
-
-    .social-icons {
-
-        margin-left: 0;
-
-        justify-content: center;
-    }
 }
 
 .contact-section {
@@ -2681,11 +2640,11 @@ body {
 
         text-align: center;
 
-        gap: 40px;
+        gap: 30px;
     }
 
     .footer-logo {
-        max-width: 280px;
+        max-width: 80px;
     }
 
     .footer-copyright {
@@ -2700,22 +2659,27 @@ body {
 
     .contact-row {
         flex-direction: column;
-
         gap: 12px;
-
+        align-items: center;
         margin-bottom: 30px;
     }
 
     .footer-icon {
         width: 40px;
+        margin-left: 0;
     }
 
     .contact-row a {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
 
         line-height: 1.6;
 
         word-break: break-word;
+    }
+
+    .contact-row i {
+
+        font-size: 0.9rem;
     }
 
     .social-icons {
