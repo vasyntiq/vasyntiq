@@ -90,60 +90,6 @@ nav a {
 
 }
 
-@media (max-width: 992px) {
-
-    nav {
-
-        padding: 15px 6%;
-
-    }
-
-    .monogram {
-
-        width: 0px;
-    }
-
-    .logo {
-
-        width: 80px;
-    }
-
-    .menu-toggle {
-
-        display: block;
-    }
-
-    .nav-links {
-
-        position: absolute;
-
-        top: 100%;
-
-        left: 0;
-
-        width: 100%;
-
-        background: #0A0F14;
-
-        flex-direction: column;
-
-        align-items: center;
-
-        gap: 25px;
-
-        padding: 25px 0;
-
-        display: none;
-    }
-
-    .nav-links.active {
-
-        display: flex;
-
-        color: #32D6C8;
-    }
-}
-
 .menu-toggle {
 
     display: none;
@@ -2455,7 +2401,7 @@ body {
     /* ================= HEADER ================= */
 
     nav {
-        padding: 15px 20px;
+        padding: 15px 6%;
     }
 
     .logo-container {
@@ -2463,7 +2409,7 @@ body {
     }
 
     .monogram {
-        height: 45px;
+        height: 0px;
     }
 
     .logo {
@@ -2482,19 +2428,17 @@ body {
         left: 0;
         width: 100%;
         background: #020d16;
-
         display: none;
         flex-direction: column;
-
         text-align: center;
-
+        gap: 25px;
         padding: 20px 0;
-
         z-index: 1000;
     }
 
     .nav-links.active {
         display: flex;
+        color: #32D6C8;
     }
 
     .nav-links li {
